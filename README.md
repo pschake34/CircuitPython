@@ -2,7 +2,7 @@
 The home for my Engineering III CircuitPython assignments.
 
 ## Table of Contents
-* ![ColorFade](#colorfade)
+* [ColorFade](#colorfade)
 
 
 ## ColorFade
@@ -13,6 +13,8 @@ This first assignment of Engineering III was a fairly simple intro project. The 
 
 ### Evidence
 
-### Images
+[Link to code](/ColorFade/ColorFade.py)
 
 ### Conclusion
+
+This was a nice simple assignment to get us started on the year. I had some issues initially with the logic for the program, but that was probably just because I was a little bit rusty.
