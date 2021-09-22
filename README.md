@@ -72,6 +72,31 @@ This was a nice simple assignment to get us started on the year. I had some issu
 
 This second assignment of the year brought in an interesting new concept: capacative touch. With capacative touch, instead of using traditional buttons for input, we could simply use wires which would provide input when touched. Our assignment was to make a servo turn right when one wire was touched and turn left when another was touched, staying still when no wires were touched.
 
+```python
+while True:
+    servo.duty_cycle = servo_duty_cycle(pulse_ms)
+    time.sleep(delay)
+
+    increment = 0
+
+    if touch_left.value:
+        print("Moving Left")
+        increment = 0.005
+    elif touch_right.value:
+        print("Moving Right")
+        increment = -0.005
+
+    if pulse_ms > 2.4:
+        pulse_ms = 2.4
+    elif pulse_ms < 0.6:
+        pulse_ms = 0.6
+
+    pulse_ms += increment
+    print(pulse_ms)
+```
+
+The logic for the main loop was fairly simple, just checking if one of the wires was being touched and making sure the limits of the 180 degree servo weren't reached. 
+
 ### Evidence
 
 [Link to Code](/ServoControl/ServoControl.py)
