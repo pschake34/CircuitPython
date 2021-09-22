@@ -70,11 +70,13 @@ This was a nice simple assignment to get us started on the year. I had some issu
 
 ### Description & Code
 
-
+This second assignment of the year brought in an interesting new concept: capacative touch. With capacative touch, instead of using traditional buttons for input, we could simply use wires which would provide input when touched. Our assignment was to make a servo turn right when one wire was touched and turn left when another was touched, staying still when no wires were touched.
 
 ### Evidence
 
+[Link to Code](/ServoControl/ServoControl.py)
 
+<img src="/images/gifs/ServoControl.gif" height=300 alt="Video of capacative touch servo control">
 
 ### Wiring
 
