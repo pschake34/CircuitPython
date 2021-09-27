@@ -53,7 +53,7 @@ A trigger was used to differentiate between the fading in cycle and the fading o
 
 [Link to code](/ColorFade/ColorFade.py)
 
-<img src="/images/gifs/ColorFade.gif" alt="Video of LED changing color" height=300>
+<img src="/ColorFade/images/ColorFade.gif" alt="Video of LED changing color" height=300>
 
 ### Wiring
 
@@ -101,10 +101,12 @@ The logic for the main loop was fairly simple, just checking if one of the wires
 
 [Link to Code](/ServoControl/ServoControl.py)
 
-<img src="/images/gifs/ServoControl.gif" height=300 alt="Video of capacative touch servo control">
+<img src="/ServoControl/images/ServoControl.gif" height=300 alt="Video of capacative touch servo control">
 
 ### Wiring
 
-
+<img src="/ServoControl/wiring/wiring.png" height=300 alt="Wiring for CircuitPython Servo">
 
 ### Reflection
+
+This second assignment was rather simple, but introduced the interesting new concept of capacative touch. While the implementation of the new technology was very simple, it led me to do some [research](https://en.wikipedia.org/wiki/Capacitive_sensing) into the concept and realize that this capacative touch is behind the most ubiquitous device of our time: the handheld smartphone. This simple fact renders capacative touch one of the most important technologies of today.
