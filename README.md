@@ -4,7 +4,7 @@ The home for my Engineering III CircuitPython assignments.
 ## Table of Contents
 * [ColorFade](#colorfade)
 * [CircuitPython Servo](#circuitpython-servo)
-* [CircuitPython LCD](#circuitpython-lcd)
+* [CircuitPython Distance Sensor](#circuitpython-distance-sensor)
 
 <br>
 <br>
@@ -110,3 +110,24 @@ The logic for the main loop was fairly simple, just checking if one of the wires
 ### Reflection
 
 This second assignment was rather simple, but introduced the interesting new concept of capacative touch. While the implementation of the new technology was very simple, it led me to do some [research](https://en.wikipedia.org/wiki/Capacitive_sensing) into the concept and realize that this capacative touch is behind the most ubiquitous device of our time: the handheld smartphone. This simple fact renders capacative touch one of the most important technologies of today.
+
+<br>
+<br>
+
+## CircuitPython Distance Sensor
+
+### Description & Code
+
+The next assignment was to make an LED fade between colors based on a distance read from an HC-SR04 ultrasonic sensor.
+
+### Evidence
+
+[Link to Code](/DistanceSensor/DistanceSensor.py)
+
+<img src="/DistanceSensor/images/DistanceSensor.gif" height=300 alt="Video of Distance Sensor">
+
+### Wiring
+
+
+
+### Reflection
