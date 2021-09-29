@@ -16,9 +16,9 @@ def fade(lower, upper, val):    # gives the values needed to fade two LEDs betwe
     real_upper = upper - lower
     result1 = (abs(val - lower) / real_upper) * 255
     result2 = 255 - result1
-    print("Result 1: " + str(result1))
-    print("Result 2: " + str(result2))
-    print("Value: " + str(val))
+    print("Result 1: " + str(result1), end="\t")
+    print("Result 2: " + str(result2), end="\t")
+    print("Value: " + str(val), end="\n")
     return result1, result2
     
 
