@@ -133,7 +133,9 @@ def fade(lower, upper, val):    # gives the values needed to fade two LEDs betwe
 
 The fading was accomplished by using an equation to map values between a certain range to a range between 0 and 255. The function which accomplished this computed the value of the two colors which were being faded between and returned them. Here is an example graph of the values this function would return: 
 
-<iframe src="https://www.desmos.com/calculator/ix3jgw16ku?embed" width="500" height="300" style="border: 1px solid #ccc" frameborder=0></iframe>
+<img src="/DistanceSensor/images/graph.png" width="500" height="300" style="border: 1px solid #ccc" frameborder=0>
+<a href="https://www.desmos.com/calculator/negv6nlvij">
+<img/>
 
 ### Evidence
 
