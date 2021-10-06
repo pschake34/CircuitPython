@@ -118,7 +118,22 @@ This second assignment was rather simple, but introduced the interesting new con
 
 ### Description & Code
 
-The next assignment was to make an LED fade between colors based on a distance read from an HC-SR04 ultrasonic sensor.
+The next assignment was to make an LED fade between colors based on a distance read from an HC-SR04 ultrasonic sensor. First, the distance to an object was computed by an HC-SR04 distance sensor. From there, the distance was used to change the color of the LED on the Circuitpython board. The color began as solid red at 5cm then faded to blue at 20 and green at 35. 
+
+```python
+def fade(lower, upper, val):    # gives the values needed to fade two LEDs between a user set range
+    real_upper = upper - lower
+    result1 = (abs(val - lower) / real_upper) * 255
+    result2 = 255 - result1
+    print("Result 1: " + str(result1), end="\t")
+    print("Result 2: " + str(result2), end="\t")
+    print("Value: " + str(val), end="\n")
+    return result1, result2
+```
+
+The fading was accomplished by using an equation to map values between a certain range to a range between 0 and 255. The function which accomplished this computed the value of the two colors which were being faded between and returned them. Here is an example graph of the values this function would return: 
+
+<iframe src="https://www.desmos.com/calculator/ix3jgw16ku?embed" width="500" height="300" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 ### Evidence
 
@@ -128,6 +143,9 @@ The next assignment was to make an LED fade between colors based on a distance r
 
 ### Wiring
 
-
+<img src="/DistanceSensor/wiring/wiring.png" height=300 alt="Wiring for CircuitPython Distance Sensor">
 
 ### Reflection
+
+This was a fun assignment for me, because making LEDs fade brings me an inordinate amount of happiness. However, I did decide to take a more complicated route than I perhaps needed to do by using algebra to map the distance values to color values. A much easier route would have been to simply use the [*simpleio library*](https://circuitpython.readthedocs.io/projects/simpleio/en/latest/api.html#simpleio.map_range) to map the values without doing the math myself. Even though this would have been easier, I'm still glad that I put the extra work in to figure out the math myself because of the added satisfaction of knowing that it was more of my code doing the heavy lifting.
+
