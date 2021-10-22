@@ -5,6 +5,8 @@ The home for my Engineering III CircuitPython assignments.
 * [ColorFade](#colorfade)
 * [CircuitPython Servo](#circuitpython-servo)
 * [CircuitPython Distance Sensor](#circuitpython-distance-sensor)
+* [CircuitPython LCD](#circuitpython-lcd)
+* [CircuitPython PhotoInterrupters](#circuitpython-photointerrupters)
 
 <br>
 <br>
@@ -133,21 +135,67 @@ def fade(lower, upper, val):    # gives the values needed to fade two LEDs betwe
 
 The fading was accomplished by using an equation to map values between a certain range to a range between 0 and 255. The function which accomplished this computed the value of the two colors which were being faded between and returned them. Here is an example graph of the values this function would return: 
 
-<img src="/DistanceSensor/images/graph.png" width="500" height="300" style="border: 1px solid #ccc" frameborder=0>
+
 <a href="https://www.desmos.com/calculator/negv6nlvij">
-<img/>
+<img src="DistanceSensor/images/graph.png" width="500" height="300" style="border: 1px solid #ccc" frameborder=0>
+</a>
 
 ### Evidence
 
 [Link to Code](/DistanceSensor/DistanceSensor.py)
 
-<img src="/DistanceSensor/images/DistanceSensor.gif" height=300 alt="Video of Distance Sensor">
+<img src="DistanceSensor/images/DistanceSensor.gif" height=300 alt="Video of Distance Sensor">
 
 ### Wiring
 
-<img src="/DistanceSensor/wiring/wiring.png" height=300 alt="Wiring for CircuitPython Distance Sensor">
+<img src="DistanceSensor/wiring/wiring.png" height=300 alt="Wiring for CircuitPython Distance Sensor">
 
 ### Reflection
 
 This was a fun assignment for me, because making LEDs fade brings me an inordinate amount of happiness. However, I did decide to take a more complicated route than I perhaps needed to do by using algebra to map the distance values to color values. A much easier route would have been to simply use the [*simpleio library*](https://circuitpython.readthedocs.io/projects/simpleio/en/latest/api.html#simpleio.map_range) to map the values without doing the math myself. Even though this would have been easier, I'm still glad that I put the extra work in to figure out the math myself because of the added satisfaction of knowing that it was more of my code doing the heavy lifting.
+
+<br>
+<br>
+
+## CircuitPython LCD
+
+### Description & Code
+
+For the next assignment, our task was to get an LCD screen working so that a counter was controlled with two wires with capacitive touch and displayed by the LCD screen.
+
+### Evidence
+
+[Link to Code](/CircuitPyLCD/CircuitPyLCD.py)
+
+<img src="CircuitPyLCD/images/CircuitPyLCD.gif" height=300 alt="Video of LCD">
+
+
+### Wiring
+
+
+
+### Reflection
+
+
+
+<br>
+<br>
+
+## CircuitPython PhotoInterrupters
+
+### Description & Code
+
+
+### Evidence
+
+[Link to Code](/PhotoInterrupters/PhotoInterrupters.py)
+
+<img src="PhotoInterrupters/images/PhotoInterrupter.gif" height=300 alt="Video of PhotoInterrupter">
+
+### Wiring
+
+
+
+### Reflection
+
 
