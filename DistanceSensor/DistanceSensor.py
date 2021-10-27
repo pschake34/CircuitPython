@@ -1,3 +1,6 @@
+# Paul Schakel
+# Changes the color of an LED based on the distance of an object
+
 import time
 import board
 import adafruit_hcsr04
