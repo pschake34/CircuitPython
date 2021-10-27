@@ -55,7 +55,7 @@ A trigger was used to differentiate between the fading in cycle and the fading o
 
 [Link to code](/ColorFade/ColorFade.py)
 
-<img src="/ColorFade/images/ColorFade.gif" alt="Video of LED changing color" height=300>
+<img src="ColorFade/images/ColorFade.gif" alt="Video of LED changing color" height=300>
 
 ### Wiring
 
@@ -103,11 +103,11 @@ The logic for the main loop was fairly simple, just checking if one of the wires
 
 [Link to Code](/ServoControl/ServoControl.py)
 
-<img src="/ServoControl/images/ServoControl.gif" height=300 alt="Video of capacative touch servo control">
+<img src="ServoControl/images/ServoControl.gif" height=300 alt="Video of capacative touch servo control">
 
 ### Wiring
 
-<img src="/ServoControl/wiring/wiring.png" height=300 alt="Wiring for CircuitPython Servo">
+<img src="ServoControl/wiring/wiring.png" height=300 alt="Wiring for CircuitPython Servo">
 
 ### Reflection
 
@@ -161,7 +161,7 @@ This was a fun assignment for me, because making LEDs fade brings me an inordina
 
 ### Description & Code
 
-For the next assignment, our task was to get an LCD screen working so that a counter was controlled with two wires with capacitive touch and displayed by the LCD screen.
+For the next assignment, our task was to get an LCD screen working so that a counter was controlled with two wires with capacitive touch and displayed by the LCD screen. 
 
 ### Evidence
 
@@ -169,9 +169,9 @@ For the next assignment, our task was to get an LCD screen working so that a cou
 
 <img src="CircuitPyLCD/images/CircuitPyLCD.gif" height=300 alt="Video of LCD">
 
-
 ### Wiring
 
+<img src="CircuitPyLCD/wiring/wiring.png" height=300 alt="Wiring for CircuitPython Distance Sensor">
 
 
 ### Reflection
@@ -186,6 +186,7 @@ For the next assignment, our task was to get an LCD screen working so that a cou
 ### Description & Code
 
 
+
 ### Evidence
 
 [Link to Code](/PhotoInterrupters/PhotoInterrupters.py)
@@ -194,7 +195,7 @@ For the next assignment, our task was to get an LCD screen working so that a cou
 
 ### Wiring
 
-
+<img src="PhotoInterrupters/wiring/wiring.png" height=300 alt="Wiring for CircuitPython PhotoInterrupters">
 
 ### Reflection
 
