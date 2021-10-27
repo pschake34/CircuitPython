@@ -22,30 +22,30 @@ interval = 1
 trigger = False
 
 while True:
-    if not trigger:
-        if r <= 100:
+    if not trigger: # if the colors should be fading in
+        if r <= 100: # fade in red
             r += interval
 
-        elif r >= 100 and g <= 100:
+        elif r >= 100 and g <= 100: # if red is faded in, fade in green
             g += interval
 
-        elif r and g >= 100 and b <= 100:
+        elif r and g >= 100 and b <= 100: # if green and red have been faded in, fade in blue
             b += interval
 
-        elif r and g and b >= 100:
+        elif r and g and b >= 100: # if all the colors are faded in, fade them out
             trigger = True
 
-    if trigger:
-        if g and b >= 100 and r > 0:
+    if trigger: # if the colors should be fading out
+        if g and b >= 100 and r > 0: # if green, blue and red are faded in, fade our red
             r -= interval
 
-        elif b >= 100 and r == 0 and g > 0:
+        elif b >= 100 and r == 0 and g > 0: # if green and blue are faded in and red isn't, fade our green 
             g -= interval
 
-        elif r == 0 and g == 0 and b > 0:
+        elif r == 0 and g == 0 and b > 0: # if green and red have been faded out, fade our blue
             b -= interval
 
-        else:
+        else: # if all the colors are faded our, fade them in again
             trigger = False
 ```
 
@@ -54,6 +54,8 @@ A trigger was used to differentiate between the fading in cycle and the fading o
 ### Evidence
 
 [Link to code](/ColorFade/ColorFade.py)
+
+Video of LED changing color - the LED is visible on the far right corner of the board
 
 <img src="ColorFade/images/ColorFade.gif" alt="Video of LED changing color" height=300>
 
@@ -76,18 +78,17 @@ This second assignment of the year brought in an interesting new concept: capaca
 
 ```python
 while True:
-    servo.duty_cycle = servo_duty_cycle(pulse_ms)
+    servo.duty_cycle = servo_duty_cycle(pulse_ms)   # set the position of the servo
     time.sleep(delay)
 
-    increment = 0
-
-    if touch_left.value:
+    if touch_left.value: # if left wire has been touched, turn left
         print("Moving Left")
         increment = 0.005
-    elif touch_right.value:
+    elif touch_right.value: # if right wire has been touched, turn right
         print("Moving Right")
         increment = -0.005
 
+    # if the values for the directional limits go past the capability of the servo, set them to a value before those limits
     if pulse_ms > 2.4:
         pulse_ms = 2.4
     elif pulse_ms < 0.6:
@@ -103,11 +104,15 @@ The logic for the main loop was fairly simple, just checking if one of the wires
 
 [Link to Code](/ServoControl/ServoControl.py)
 
+Video of capacative touch servo control
+
 <img src="ServoControl/images/ServoControl.gif" height=300 alt="Video of capacative touch servo control">
 
 ### Wiring
 
 <img src="ServoControl/wiring/wiring.png" height=300 alt="Wiring for CircuitPython Servo">
+
+Pretty straightforward wiring - the two wires sticking out at odd angles are the capacative touch wires.
 
 ### Reflection
 
@@ -149,6 +154,8 @@ The fading was accomplished by using an equation to map values between a certain
 ### Wiring
 
 <img src="DistanceSensor/wiring/wiring.png" height=300 alt="Wiring for CircuitPython Distance Sensor">
+
+Wiring of the distance sensor - the breadboard was not used in my real design above, but would be useful to hold it in place and expand the wiring if needed.
 
 ### Reflection
 
